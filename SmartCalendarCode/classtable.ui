@@ -1,0 +1,1096 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ClassTable</class>
+ <widget class="QWidget" name="ClassTable">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>955</width>
+    <height>623</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Class Table</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>10</y>
+     <width>931</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="TimeLabel" name="timeLabel">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>TimeLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QLabel" name="semesterLabel">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Semester</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="prevWeekButton">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>&lt;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="weekShownLabel">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>ShownMonth</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="nextWeekButton">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="manageButton">
+      <property name="text">
+       <string>Manage</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>13</x>
+     <y>50</y>
+     <width>931</width>
+     <height>561</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;
+background-color: rgb(204, 204, 204);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="vLabel_1">
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;
+background-color: rgb(204, 204, 204);</string>
+        </property>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="vLabel_2">
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;
+background-color: rgb(204, 204, 204);</string>
+        </property>
+        <property name="text">
+         <string>2</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="vLabel_3">
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;
+background-color: rgb(204, 204, 204);</string>
+        </property>
+        <property name="text">
+         <string>3</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="vLabel_4">
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;
+background-color: rgb(204, 204, 204);</string>
+        </property>
+        <property name="text">
+         <string>4</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="vLabel_5">
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;
+background-color: rgb(204, 204, 204);</string>
+        </property>
+        <property name="text">
+         <string>5</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="vLabel_6">
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;
+background-color: rgb(204, 204, 204);</string>
+        </property>
+        <property name="text">
+         <string>6</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="vLabel_7">
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;
+background-color: rgb(204, 204, 204);</string>
+        </property>
+        <property name="text">
+         <string>Others</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="hLabel_1">
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;
+background-color: rgb(204, 204, 204);</string>
+        </property>
+        <property name="text">
+         <string>Mon</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_1">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_8">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_15">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_22">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_29">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_36">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_43">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="hLabel_2">
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;
+background-color: rgb(204, 204, 204);</string>
+        </property>
+        <property name="text">
+         <string>Tue</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_9">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_16">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_23">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_30">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_37">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_44">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="hLabel_3">
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;
+background-color: rgb(204, 204, 204);</string>
+        </property>
+        <property name="text">
+         <string>Wed</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_3">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_10">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_17">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_24">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_31">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_38">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_45">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="hLabel_4">
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;
+background-color: rgb(204, 204, 204);</string>
+        </property>
+        <property name="text">
+         <string>Thu</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_4">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_11">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_18">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_25">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_32">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_39">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_46">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_6">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="hLabel_5">
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;
+background-color: rgb(204, 204, 204);</string>
+        </property>
+        <property name="text">
+         <string>Fri</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_5">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_12">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_19">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_26">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_33">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_40">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_47">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(159, 255, 235);
+font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_7">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="hLabel_6">
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;
+background-color: rgb(204, 204, 204);</string>
+        </property>
+        <property name="text">
+         <string>Sat</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_6">
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;
+background-color: rgb(0, 255, 128);</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_13">
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;
+background-color: rgb(0, 255, 128);</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_20">
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;
+background-color: rgb(0, 255, 128);</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_27">
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;
+background-color: rgb(0, 255, 128);</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_34">
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;
+background-color: rgb(0, 255, 128);</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_41">
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;
+background-color: rgb(0, 255, 128);</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_48">
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;
+background-color: rgb(0, 255, 128);</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_8">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="hLabel_7">
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;
+background-color: rgb(204, 204, 204);</string>
+        </property>
+        <property name="text">
+         <string>Sun</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_7">
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;
+background-color: rgb(0, 255, 128);</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_14">
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;
+background-color: rgb(0, 255, 128);</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_21">
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;
+background-color: rgb(0, 255, 128);</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_28">
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;
+background-color: rgb(0, 255, 128);</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_35">
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;
+background-color: rgb(0, 255, 128);</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_42">
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;
+background-color: rgb(0, 255, 128);</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="ClassLabel" name="label_49">
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot;Helvetica&quot;;
+border-color: rgb(75, 155, 255);
+border-width: 1px;
+border-style: solid;
+background-color: rgb(0, 255, 128);</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>TimeLabel</class>
+   <extends>QLabel</extends>
+   <header>timelabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ClassLabel</class>
+   <extends>QLabel</extends>
+   <header location="global">classlabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

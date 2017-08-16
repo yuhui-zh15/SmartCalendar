@@ -1,0 +1,34 @@
+QToolButton#qt_calendar_prevmonth,QToolButton#qt_calendar_nextmonth,QToolButton#qt_calendar_monthbutton,QToolButton#qt_calendar_yearbutton{
+border:0px solid #000000;
+border-radius:3px;
+margin:3px 3px 3px 3px;
+padding:3px;
+background-color:rgba(0,0,0,0);
+}
+
+QToolButton#qt_calendar_prevmonth:hover,QToolButton#qt_calendar_nextmonth:hover,QToolButton#qt_calendar_monthbutton:hover,QToolButton#qt_calendar_yearbutton:hover,QToolButton#qt_calendar_prevmonth:pressed,QToolButton#qt_calendar_nextmonth:pressed,QToolButton#qt_calendar_monthbutton:pressed,QToolButton#qt_calendar_yearbutton:pressed{
+border:1px solid #D8D8D8;
+}
+
+QCalendarWidget QSpinBox#qt_calendar_yearedit{
+margin:3px 3px 3px 3px;
+padding:0px -7px 0px 0px;
+}
+
+QDateEdit QCalendarWidget QSpinBox#qt_calendar_yearedit,QDateTimeEdit QCalendarWidget QSpinBox#qt_calendar_yearedit{
+padding:0px -2px 0px 0px;
+}
+
+QCalendarWidget QToolButton::menu-indicator{
+image:None;
+}
+
+QCalendarWidget QTableView{
+border-width:0px;
+}
+
+QCalendarWidget QWidget#qt_calendar_navigationbar{
+border:1px solid #575757;
+border-width:1px 1px 0px 1px;
+//background: white;
+}
